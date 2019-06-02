@@ -164,6 +164,9 @@ function startGame() {
     updateElement("messageBox", '.style.display', "block")
     updateElement("rulesBox", '.style.display', "none")
 
+    updateElement("hitMeBtn", '.disabled', false)
+    updateElement("standBtn", '.disabled', false)
+
     //Create the deck
     for (var n = 1; n < 14; n++) {
         if (n == 1) {
