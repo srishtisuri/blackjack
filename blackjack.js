@@ -162,6 +162,7 @@ function startGame() {
 
     updateConsole("The game has started!")
     updateElement("messageBox", '.style.display', "block")
+    updateElement("rulesBox", '.style.display', "none")
 
     //Create the deck
     for (var n = 1; n < 14; n++) {
