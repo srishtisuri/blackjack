@@ -1,0 +1,83 @@
+body {
+    background-image: url('./blackjack_wallpaper.jpg');
+}
+
+#container {
+    text-align: center;
+    font-family: sans-serif;
+    width: 80%;
+    margin: 0 auto;
+}
+
+#heading {
+    font-size: 60px;
+}
+
+.button {
+    background-color: black;
+    color: white;
+    padding: 10px 20px 10px 20px;
+    width: 150px;
+    font-weight: bold;
+    font-size: 15px;
+    border: 1px solid transparent;
+    border-radius: 8px;
+}
+
+.button:hover {
+    background-color: red;
+    cursor: pointer;
+}
+
+.button:disabled {
+    background-color: rgb(69, 69, 69);
+    cursor: pointer;
+}
+
+#rulesBox {
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 5px 20px 15px 20px;
+    width: 600px;
+    /* height: 400px; */
+    margin: 30px auto 30px auto;
+    border-radius: 20px;
+}
+#rulesBox > ol{
+text-align: left;
+font-size: 20px;
+line-height: 1.5;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th,td {
+    text-align: center;
+    padding: 8px;
+    width: 50%;
+    /* border: 2px solid red; */
+}
+
+th {
+    /* border: 2px solid red; */
+    color: black;
+    font-size: 30px;
+}
+
+#messageBox {
+    background-color: white;
+    padding: 15px 20px 15px 20px;
+    width: 600px;
+    margin: 30px auto 30px auto;
+    display: none;
+    border-radius: 200px;
+    text-align: left;
+}
+
+.sum {
+    font-size: 40px;
+    font-weight: bold;
+    color: black;
+}
