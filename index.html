@@ -1,1 +1,62 @@
+<!DOCTYPE html>
+<html>
 
+<head>
+	<title>Black Jack</title>
+	<link rel="stylesheet" type="text/css" href="blackjack.css">
+</head>
+
+<body id="main">
+
+	<div id="container">
+		<h1 id="heading">Black Jack</h1>
+
+		<button class="button" id="startGameBtn" onclick="startGame()">Start Game</button>
+		<button class="button" id="hitMeBtn" onclick="hitMe()" disabled>Hit Me!</button>
+		<button class="button" id="standBtn" onclick="stand()" disabled>Stand</button>
+		<button class="button" id="resetBtn" onclick="location.reload();">Reset</button>
+
+		<!-- <p id="turn">Turn: </p> -->
+
+		<div id="rulesBox">
+			<h1>Rules</h1>
+			<ol>
+				<li>The aim of the game is to obtain a hand with a sum as close to 21 as possible without getting 21 or higher.</li>
+				<li>When the game begins, each player will be dealt 2 cards to start with.</li>
+				<li>If you select 'Hit Me!' a new card will be drawn and added to your hand.</li>
+				<li>If you select 'Stand' you cannot draw a new card until the end of the round. </li>
+				<li>At the end of the round, the player with the hand closest to 21 wins.</li>
+			</ol>
+		</div>
+
+		<p id="messageBox"></p>	
+
+		<table>
+			<tr>
+				<th id="dealerTitle"></th>
+				<th id="playerTitle"></th>
+			</tr>
+			<tr>
+				<td id="dealerHandTemp"></td>
+				<td id="playerHandTemp"></td>
+			</tr>
+			<tr>
+				<td id="dealerTurn"></td>
+				<td id="playerTurn"></td>
+			</tr>
+			<tr>
+				<td class="sum" id="dealerHandSum"></td>
+				<td class="sum" id="playerHandSum"></td>
+			</tr>
+			
+		</table>
+
+		<!-- <p id="dealerHand">Dealer's Hand: </p>
+		<p id="playerHand">Player's Hand: </p> -->
+	</div>
+
+	<script src="blackjack.js"></script>
+
+</body>
+
+</html>
